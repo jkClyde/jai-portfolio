@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #8873EF; /* Example: Tailwind blue-600 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* 👇 map directly to Tailwind */
+  --color-primary: var(--primary);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: white;
+    --foreground: #0a0a0a;
+    --primary: #8873EF;
+    --lightGray: #757575;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', Arial, sans-serif;
+  padding-left:3%;
+  padding-right: 3%;
+}
+
+#fp-nav ul li a span{background: var(--primary) !important;}
