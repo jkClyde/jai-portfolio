@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* Hard-cut Slanted Background */}
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(135deg,white_50%,theme(colors.primary)_50%)]"></div>
 
-      <div className="max-w-[1200px] mx-auto flex justify-between items-center gap-12">
+      <div className="max-w-[1366px] mx-auto flex justify-between items-center gap-12">
         {/* Text */}
         <div className="flex-1">
           <div className="mb-6">
